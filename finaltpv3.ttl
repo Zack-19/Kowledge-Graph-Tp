@@ -1,0 +1,1940 @@
+@prefix : <http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16/> .
+
+<http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#hasAdvantge
+:hasAdvantge rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#adapt
+:adapt rdf:type owl:ObjectProperty ;
+       rdfs:domain :Practical_system ;
+       rdfs:range :KnowledgeGraph .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#articleRelatedTo
+:articleRelatedTo rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#collectDataOn
+:collectDataOn rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#commonlyUses
+:commonlyUses rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#createKG
+:createKG rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#curatedUsing
+:curatedUsing rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#generate
+:generate rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#hasApplication
+:hasApplication rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#hasMethod
+:hasMethod rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#hasNext
+:hasNext rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#hasNextTask
+:hasNextTask rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#hasProblem
+:hasProblem rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#hasRequirment
+:hasRequirment rdf:type owl:ObjectProperty ;
+               rdfs:domain :Application ;
+               rdfs:range :Requirment .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#has_as_key_word
+:has_as_key_word rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#has_author
+:has_author rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#has_ref
+:has_ref rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#implement
+:implement rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#implementStandard
+:implementStandard rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#informationAddingMethod
+:informationAddingMethod rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#informationType
+:informationType rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#integrateOtherKG
+:integrateOtherKG rdf:type owl:ObjectProperty ;
+                  rdfs:domain :KnowledgeGraph ;
+                  rdfs:range :KnowledgeGraph .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#isPartOf
+:isPartOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#is_a_representative_technique_of
+:is_a_representative_technique_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#madeOf
+:madeOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#manageKG
+:manageKG rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#parses
+:parses rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#provideInformationTo
+:provideInformationTo rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#relayOn
+:relayOn rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#suitedFor
+:suitedFor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#support
+:support rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#talks_about
+:talks_about rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#usedFor
+:usedFor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#uses
+:uses rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#usesEdgesFor
+:usesEdgesFor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#visualized_By
+:visualized_By rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#works_for
+:works_for rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#catalogs
+:catalogs rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#citation
+:citation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#date
+:date rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#nation
+:nation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#nbLanguages
+:nbLanguages rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#nbObjects
+:nbObjects rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#nbRelations
+:nbRelations rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#title
+:title rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#AITask
+:AITask rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Application
+:Application rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Bottom_Level
+:Bottom_Level rdf:type owl:Class ;
+              rdfs:subClassOf :KG_schemata .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Curation
+:Curation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#DBMS
+:DBMS rdf:type owl:Class ;
+      rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Data_Entity
+:Data_Entity rdf:type owl:Class ;
+             rdfs:subClassOf :Bottom_Level .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Data_representation
+:Data_representation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Direct_Labeled__Graph
+:Direct_Labeled__Graph rdf:type owl:Class ;
+                       rdfs:subClassOf :KnowledgeGraph .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Edge
+:Edge rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ExecutableKG
+:ExecutableKG rdf:type owl:Class ;
+              rdfs:subClassOf :KnowledgeGraph .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Field
+:Field rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#InformationAddingMethod
+:InformationAddingMethod rdf:type owl:Class ;
+                         rdfs:subClassOf :Method .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#InformationProvider
+:InformationProvider rdf:type owl:Class ;
+                     rdfs:subClassOf :Organization .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#InformationType
+:InformationType rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#KG_schemata
+:KG_schemata rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Keyword
+:Keyword rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#KnowledgeGraph
+:KnowledgeGraph rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :madeOf ;
+                                                             owl:someValuesFrom :Edge
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :madeOf ;
+                                                             owl:someValuesFrom :Node
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#LanguageQuery
+:LanguageQuery rdf:type owl:Class ;
+               rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Library
+:Library rdf:type owl:Class ;
+         rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Method
+:Method rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Node
+:Node rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Organization
+:Organization rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Platform
+:Platform rdf:type owl:Class ;
+          rdfs:subClassOf :Tools .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Practical_system
+:Practical_system rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Problem
+:Problem rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Property_Graph
+:Property_Graph rdf:type owl:Class ;
+                rdfs:subClassOf :KnowledgeGraph ;
+                rdfs:isDefinedBy """associate properties and values with
+each node and each edge.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Ref
+:Ref rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Requirment
+:Requirment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ResearchPaper
+:ResearchPaper rdf:type owl:Class ;
+               rdfs:subClassOf :article .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Semantics
+:Semantics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Standard
+:Standard rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Step
+:Step rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#StepsList
+:StepsList rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Survey_Article
+:Survey_Article rdf:type owl:Class ;
+                rdfs:subClassOf :article .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Symbolic_representation
+:Symbolic_representation rdf:type owl:Class ;
+                         rdfs:subClassOf :Data_representation .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Tasks
+:Tasks rdf:type owl:Class ;
+       rdfs:subClassOf :Bottom_Level .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Tools
+:Tools rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Upper_level
+:Upper_level rdf:type owl:Class ;
+             rdfs:subClassOf :KG_schemata .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#article
+:article rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#author
+:author rdf:type owl:Class ;
+        rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#publishing_organizations
+:publishing_organizations rdf:type owl:Class ;
+                          rdfs:subClassOf :Organization .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#research_organizations
+:research_organizations rdf:type owl:Class ;
+                        rdfs:subClassOf :Organization .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#vector_representation
+:vector_representation rdf:type owl:Class ;
+                       rdfs:subClassOf :Data_representation .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref1
+:A0ref1 rdf:type owl:NamedIndividual ,
+                 :Ref ;
+        rdfs:isDefinedBy """Abreu, P.H., Santos, M.S., Abreu, M.H., Andrade, B., Silva, D.C.: Predicting
+Breast Cancer Recurrence Using Machine Learning Techniques: A Systematic Review. ACM Computing Surveys 49(3), 52:1–52:40 (Oct 2016). https://doi.org/
+10.1145/2988544""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref10
+:A0ref10 rdf:type owl:NamedIndividual ,
+                  :Ref .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref11
+:A0ref11 rdf:type owl:NamedIndividual ,
+                  :Ref .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref12
+:A0ref12 rdf:type owl:NamedIndividual ,
+                  :Ref .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref13
+:A0ref13 rdf:type owl:NamedIndividual ,
+                  :Ref .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref2
+:A0ref2 rdf:type owl:NamedIndividual ,
+                 :Ref ;
+        rdfs:isDefinedBy """Bartschat, A., Reischl, M., Mikut, R.: Data Mining Tools. Wiley Interdisciplinary
+Reviews: Data Mining and Knowledge Discovery 9(4), e1309 (2019). https://doi.
+org/10.1002/widm.1309""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref3
+:A0ref3 rdf:type owl:NamedIndividual ,
+                 :Ref ;
+        rdfs:isDefinedBy """Heidrich, B., Bartschat, A., Turowski, M., Neumann, O., Phipps, K., Meisenbacher,
+S., Schmieder, K., Ludwig, N., Mikut, R., Hagenmeyer, V.: pyWATTS: Python
+Workflow Automation Tool for Time Series. arXiv preprint arXiv:2106.10157
+(2021). https://doi.org/10.48550/arXiv.2106.10157""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref4
+:A0ref4 rdf:type owl:NamedIndividual ,
+                 :Ref ;
+        rdfs:isDefinedBy """Heidrich, B., Bartschat, A., Turowski, M., Neumann, O., Phipps, K., Meisenbacher,
+S., Schmieder, K., Ludwig, N., Mikut, R., Hagenmeyer, V.: pyWATTS: Python
+Workflow Automation Tool for Time Series. arXiv preprint arXiv:2106.10157
+(2021). https://doi.org/10.48550/arXiv.2106.10157""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref5
+:A0ref5 rdf:type owl:NamedIndividual ,
+                 :Ref ;
+        rdfs:isDefinedBy """Kim, J., Ahn, I.: Infectious Disease Outbreak Prediction Using Media Articles
+with Machine Learning Models. Scientific Reports 11(1), 4413 (Feb 2021). https:
+//doi.org/10.1038/s41598-021-83926-2""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref6
+:A0ref6 rdf:type owl:NamedIndividual ,
+                 :Ref ;
+        rdfs:isDefinedBy """. Kourou, K., Exarchos, T.P., Exarchos, K.P., Karamouzis, M.V., Fotiadis, D.I.: Machine Learning Applications in Cancer Prognosis and Prediction. Computational
+and Structural Biotechnology Journal 13, 8–17 (Jan 2015). https://doi.org/10.
+1016/j.csbj.2014.11.005""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref7
+:A0ref7 rdf:type owl:NamedIndividual ,
+                 :Ref ;
+        rdfs:isDefinedBy """Libbrecht, M.W., Noble, W.S.: Machine Learning Applications in Genetics and
+Genomics. Nature Reviews Genetics 16(6), 321–332 (Jun 2015). https://doi.
+org/10.1038/nrg3920""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref8
+:A0ref8 rdf:type owl:NamedIndividual ,
+                 :Ref ;
+        rdfs:isDefinedBy """Meng, L., McWilliams, B., Jarosinski, W., Park, H.Y., Jung, Y.G., Lee, J., Zhang,
+J.: Machine Learning in Additive Manufacturing: A Review. JOM 72(6), 2363–
+2377 (Jun 2020). https://doi.org/10.1007/s11837-020-04155-y""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#A0ref9
+:A0ref9 rdf:type owl:NamedIndividual ,
+                 :Ref ;
+        rdfs:isDefinedBy """Mikut, R., Bartschat, A., Doneit, W., Ordiano, J.A.G., Schott, B., Stegmaier, J., ´
+Waczowicz, S., Reischl, M.: The MATLAB Toolbox SciXMiner: User’s Manual and
+Programmer’s Guide. arXiv preprint arXiv:1704.03298 (2017). https://doi.org/
+10.48550/arXiv.1704.03298""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#APG
+:APG rdf:type owl:NamedIndividual ,
+              :Direct_Labeled__Graph ,
+              :KnowledgeGraph ;
+     :curatedUsing :machine .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Aditya_Kalyanpur
+:Aditya_Kalyanpur rdf:type owl:NamedIndividual ,
+                           :author ;
+                  :works_for :Elemental_Cognition .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Amazon_Sage_Maker
+:Amazon_Sage_Maker rdf:type owl:NamedIndividual ,
+                            :Platform .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Antonis_Klironomos
+:Antonis_Klironomos rdf:type owl:NamedIndividual ,
+                             :author ;
+                    :works_for :Bosch_Center_for_Artificial_Intelligence ,
+                               :University_of_Mannheim .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#BIGS
+:BIGS rdf:type owl:NamedIndividual ,
+               :Application ;
+      rdfs:isDefinedBy "advocates for capturing more meaning about concepts." .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Baifan_Zhou
+:Baifan_Zhou rdf:type owl:NamedIndividual ,
+                      :author ;
+             :works_for :University_of_Oslo .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Big_semantics
+:Big_semantics rdf:type owl:NamedIndividual ,
+                        :Semantics ;
+               :hasApplication :BIGS .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Bosch_Center_for_Artificial_Intelligence
+:Bosch_Center_for_Artificial_Intelligence rdf:type owl:NamedIndividual ,
+                                                   :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Bureau_of_Economic_Analysis
+:Bureau_of_Economic_Analysis rdf:type owl:NamedIndividual ,
+                                      :InformationProvider ;
+                             :provideInformationTo :Data_Commons .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Bureau_of_Labor_Statistics
+:Bureau_of_Labor_Statistics rdf:type owl:NamedIndividual ,
+                                     :InformationProvider ;
+                            :provideInformationTo :Data_Commons .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#CALIS
+:CALIS rdf:type owl:NamedIndividual ,
+                :Standard ;
+       rdfs:isDefinedBy "China Academic Library and Information System" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#CSRapp1
+:CSRapp1 rdf:type owl:NamedIndividual ,
+                  :Application ;
+         rdfs:isDefinedBy """cause-and-effect reasoning.
+Given an event such as X repels Y’s attack, humans can
+make many commonsense inferences about why did the
+repel happen? How does X feel about the attack? What
+might be the likely effect of such a repel? A general strategy to program such reasoning is to first curate a KG manually and then use it in conjunction with a machine learning algorithm to predict the effects for events that do not
+exist in the KG.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#CV
+:CV rdf:type owl:NamedIndividual ,
+             :Field .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#CV_KG
+:CV_KG rdf:type owl:NamedIndividual ,
+                :KnowledgeGraph ;
+       :hasApplication :CVapp1 ,
+                       :NLP_CV_app1 ;
+       :usedFor :CV .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#CVapp1
+:CVapp1 rdf:type owl:NamedIndividual ,
+                 :Application ;
+        rdfs:isDefinedBy """In CV, an image is represented as a set of objects with
+a set of properties, where each object corresponds to a
+bounding box, identified by an object detector, and the
+objects are interconnected by a set of named relationships
+that are predicted by a model trained for identifying visual
+relationships.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Cause-Effect-KG
+:Cause-Effect-KG rdf:type owl:NamedIndividual ,
+                          :KnowledgeGraph ;
+                 :hasApplication :CSRapp1 ;
+                 :hasMethod :machine_learning_with_graphs ;
+                 :usedFor :CommonSenseReasoning .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Center_for_Disease_Control
+:Center_for_Disease_Control rdf:type owl:NamedIndividual ,
+                                     :InformationProvider ;
+                            :provideInformationTo :Data_Commons .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Chaitanya_Baru
+:Chaitanya_Baru rdf:type owl:NamedIndividual ,
+                         :author ;
+                :works_for :San_Diego_Supercomputer_Center .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#CommonSenseReasoning
+:CommonSenseReasoning rdf:type owl:NamedIndividual ,
+                               :Field .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Cyc
+:Cyc rdf:type owl:NamedIndividual ,
+              :KnowledgeGraph ;
+     :curatedUsing :human ;
+     :informationAddingMethod :human-driven ;
+     rdfs:isDefinedBy """Cyc knowledge base was largely created through human
+curation because the project aims to capture “hidden”
+knowledge that is not explicitly written down in text and,
+thus, cannot be automatically extracted.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#CycL
+:CycL rdf:type owl:NamedIndividual ,
+               :LanguageQuery ;
+      :is_a_representative_technique_of :Big_semantics .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Cycorp
+:Cycorp rdf:type owl:NamedIndividual ,
+                 :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#DIPstep1
+:DIPstep1 rdf:type owl:NamedIndividual ,
+                   :Step ;
+          :hasNext :DIPstep2 ;
+          rdfs:isDefinedBy """knowledge engineers
+working with business analysts to sketch out a schema
+of the key entities, events, and the relationships that they
+are interested in tracking. An essential part
+of this process is for the users to agree on the meanings
+of the terms.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#DIPstep2
+:DIPstep2 rdf:type owl:NamedIndividual ,
+                   :Step ;
+          rdfs:isDefinedBy """the KG schema needs to be mapped to
+the schemas of the underlying sources so that the respective data can be loaded into the KG engine. The meaning
+of the data stored in enterprise databases is hidden in logic
+embedded in queries, data models, application code, written documentation, or simply in the minds of subject matter experts requiring both human and machine effort in the
+mapping process""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#DOI
+:DOI rdf:type owl:NamedIndividual ,
+              :Standard ;
+     :hasProblem :SDRp1 ,
+                 :SDRp2 ,
+                 :SDRp3 ;
+     rdfs:isDefinedBy "Document Object Identifier" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Data_Commons
+:Data_Commons rdf:type owl:NamedIndividual ,
+                       :Direct_Labeled__Graph ,
+                       :KnowledgeGraph ;
+              :informationType :Open_Information .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Data_entities_are_then_used_as_input_to_the_ML_pipeline_tasks
+:Data_entities_are_then_used_as_input_to_the_ML_pipeline_tasks rdf:type owl:NamedIndividual ,
+                                                                        :Step ;
+                                                               :hasNext :add_entities_representing_the_user_task_type_and_method_type .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Data_entity_Description
+:Data_entity_Description rdf:type owl:NamedIndividual ,
+                                  :Upper_level .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Denny_Vrandečić
+:Denny_Vrandečić rdf:type owl:NamedIndividual ,
+                          :author ;
+                 :works_for :Wikimedia_Foundation .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Douglas_B._Lenat
+:Douglas_B._Lenat rdf:type owl:NamedIndividual ,
+                           :author ;
+                  :works_for :Cycorp .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#EGKapp5
+:EGKapp5 rdf:type owl:NamedIndividual ,
+                  :Application ;
+         rdfs:isDefinedBy """Due to the relative ease of creating and visualizing the
+schema and the availability of built-in analytics operations,
+KGs are becoming a popular solution for turning data into
+intelligence in the enterprises.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#EKGapp1
+:EKGapp1 rdf:type owl:NamedIndividual ,
+                  :Application ;
+         rdfs:isDefinedBy """the visual nature of the graph-oriented KG schemas
+facilitates whiteboarding of the schemas by the business users and subject matter experts in specifying their""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#EKGapp2
+:EKGapp2 rdf:type owl:NamedIndividual ,
+                  :Application ;
+         rdfs:isDefinedBy """the integrated information
+may come from text and other unstructured sources (for
+example, news, social media, and others) as well as structured data sources (for example, relational databases). As
+many information extraction systems already output information in triples, using a generic schema of triples substantially reduces the cost of starting such data integration
+projects.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#EKGapp3
+:EKGapp3 rdf:type owl:NamedIndividual ,
+                  :Application ;
+         rdfs:isDefinedBy """it can be easier to adapt a triple-based
+schema in response to changes than the comparable effort
+required to adapt a traditional relational database. This is
+because a relational system is typically modeled to support
+the application (McComb 2018), and thus, schema changes
+often require database reorganization. On the other hand,
+in a KG system, the schema is modeled to represent the
+enterprise (McComb 2019), and its representation in triples
+remains fixed""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#EKGapp4
+:EKGapp4 rdf:type owl:NamedIndividual ,
+                  :Application ;
+         rdfs:isDefinedBy "modern KG engines are highly optimized for answering questions that require traversing the graph relationships in the data" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Elemental_Cognition
+:Elemental_Cognition rdf:type owl:NamedIndividual ,
+                              :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Enterprise_Information
+:Enterprise_Information rdf:type owl:NamedIndividual ,
+                                 :InformationType .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Environmental_Intelligence_OKN
+:Environmental_Intelligence_OKN rdf:type owl:NamedIndividual ,
+                                         :KnowledgeGraph ;
+                                :informationType :Open_Information .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Eurostat
+:Eurostat rdf:type owl:NamedIndividual ,
+                   :InformationProvider ;
+          :provideInformationTo :Data_Commons .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Evgeny_Kharlamov
+:Evgeny_Kharlamov rdf:type owl:NamedIndividual ,
+                           :author ;
+                  :works_for :Bosch_Center_for_Artificial_Intelligence ,
+                             :Evgeny_Kharlamov .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ExeKGLib
+:ExeKGLib rdf:type owl:NamedIndividual ,
+                   :Library ;
+          owl:sameAs :Python_Library ;
+          :generate :ML_pipeline ,
+                    :Statistics_pipeline ,
+                    :Visualization_pipeline ;
+          :parses :ML_pipeline ;
+          :support :ML_modeling ,
+                   :data_preprocessing ,
+                   :data_visualization ,
+                   :feature_engineering ;
+          :usedFor :ML ;
+          :uses :KG0 ,
+                :matplotlib ,
+                :scikit-learn ;
+          :hasAdvantge """using our tool to
+solve a task reduces the overhead prior to the implementation, reduces the effort
+during the code development, and increases the explainability of the resulting
+ML pipeline.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Python_Library
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ExeKGLib_populates_the_KG_with_data_entities_representing_the_target_columns
+:ExeKGLib_populates_the_KG_with_data_entities_representing_the_target_columns rdf:type owl:NamedIndividual ,
+                                                                                       :Step ;
+                                                                              :hasNext :Data_entities_are_then_used_as_input_to_the_ML_pipeline_tasks .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Executable_KG_Construction__steps
+:Executable_KG_Construction__steps rdf:type owl:NamedIndividual ,
+                                            :StepsList ;
+                                   :hasNext :extracting_the_columns_from_the_input_dataset .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#GKG
+:GKG rdf:type owl:NamedIndividual ,
+              :KnowledgeGraph .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#GPapp1
+:GPapp1 rdf:type owl:NamedIndividual ,
+                 :Application ;
+        rdfs:isDefinedBy "to represent facts that are in dispute" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#GPapp2
+:GPapp2 rdf:type owl:NamedIndividual ,
+                 :Application ;
+        rdfs:isDefinedBy "highly time-dependent information" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#GPapp3
+:GPapp3 rdf:type owl:NamedIndividual ,
+                 :Application ;
+        rdfs:isDefinedBy "genuine diversities" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#GPapp4
+:GPapp4 rdf:type owl:NamedIndividual ,
+                 :Application ;
+        rdfs:isDefinedBy "represent the probability with which that relationship is known to be true." .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Gad-Elrab_Mohamed
+:Gad-Elrab_Mohamed rdf:type owl:NamedIndividual ,
+                            :author ;
+                   :works_for :Bosch_Center_for_Artificial_Intelligence .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Google_AutoML
+:Google_AutoML rdf:type owl:NamedIndividual ,
+                        :Platform .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Graph_Query_Language
+:Graph_Query_Language rdf:type owl:NamedIndividual ,
+                               :LanguageQuery .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Graph_embedding
+:Graph_embedding rdf:type owl:NamedIndividual ,
+                          :vector_representation ;
+                 :usedFor :image_recognition .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Heiko_Paulheim
+:Heiko_Paulheim rdf:type owl:NamedIndividual ,
+                         :author ;
+                :has_ref :A0ref12 ;
+                :works_for :University_of_Mannheim .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#IATA
+:IATA rdf:type owl:NamedIndividual ,
+               :Standard ;
+      rdfs:isDefinedBy "International Air Transport Association" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ISNI
+:ISNI rdf:type owl:NamedIndividual ,
+               :Standard ;
+      rdfs:isDefinedBy "International Standard Name Identifier" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Intergovernmental_Panel_on_Climate_Change
+:Intergovernmental_Panel_on_Climate_Change rdf:type owl:NamedIndividual ,
+                                                    :InformationProvider ;
+                                           :provideInformationTo :Data_Commons .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Interquartile_Range_calculation
+:Interquartile_Range_calculation rdf:type owl:NamedIndividual ,
+                                          :Method .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#James_Hendler
+:James_Hendler rdf:type owl:NamedIndividual ,
+                        :author ;
+               :works_for :Renssalear_Polytechnic_Institute .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Juan_Sequeda
+:Juan_Sequeda rdf:type owl:NamedIndividual ,
+                       :author ;
+              :works_for :data.world .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#KG0
+:KG0 rdf:type owl:NamedIndividual ,
+              :KnowledgeGraph ;
+     owl:sameAs :Knowledge_Graph ;
+     :hasApplication :EKGapp2 ,
+                     :EKGapp3 ,
+                     :EKGapp4 ,
+                     :KGapp1 ,
+                     :KGapp2 ,
+                     :VectorKGapp1 .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Knowledge_Graph
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#KG_is_serialized_and_saved_on_the_disk
+:KG_is_serialized_and_saved_on_the_disk rdf:type owl:NamedIndividual ,
+                                                 :Step .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#KGapp1
+:KGapp1 rdf:type owl:NamedIndividual ,
+                 :Application ;
+        rdfs:isDefinedBy """integration and organization of information about known “entities,” either as an openly accessible resource on the webiii, or as a proprietary resource
+within an enterprise/organization""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#KGapp2
+:KGapp2 rdf:type owl:NamedIndividual ,
+                 :Application ;
+        rdfs:isDefinedBy """representation
+of input and output information for AI/ML algorithms.
+These application use cases are explored further in the following sections.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Knowledge_Graph
+:Knowledge_Graph rdf:type owl:NamedIndividual ,
+                          :Keyword .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Kuansan_Wang
+:Kuansan_Wang rdf:type owl:NamedIndividual ,
+                       :author ;
+              :works_for :Microsoft .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#LITTLES
+:LITTLES rdf:type owl:NamedIndividual ,
+                  :Application ;
+         rdfs:isDefinedBy """is focused on
+capturing/recording the basic facts and not so much the
+concept meanings""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Library_of_Congress
+:Library_of_Congress rdf:type owl:NamedIndividual ,
+                              :InformationProvider ;
+                     :provideInformationTo :Wikidata .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Linear_Regression
+:Linear_Regression rdf:type owl:NamedIndividual ,
+                            :Method .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Little_semantics
+:Little_semantics rdf:type owl:NamedIndividual ,
+                           :Semantics ;
+                  :hasApplication :LITTLES .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Loads_a_feature_from_an_input_CSV_dataset
+:Loads_a_feature_from_an_input_CSV_dataset rdf:type owl:NamedIndividual ,
+                                                    :Step ;
+                                           :hasNext :normalizes_it ,
+                                                    :plots_its_values_using_a_line_plot .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Loads_features_and_labels
+:Loads_features_and_labels rdf:type owl:NamedIndividual ,
+                                    :Step ;
+                           :hasNext :splits_the_data .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#MAG
+:MAG rdf:type owl:NamedIndividual ,
+              :Direct_Labeled__Graph ,
+              :KnowledgeGraph ;
+     :curatedUsing :machine .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ML
+:ML rdf:type owl:NamedIndividual ,
+             :Field ;
+    owl:sameAs :Machine_Learning .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Machine_Learning
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#MLP
+:MLP rdf:type owl:NamedIndividual ,
+              :Method .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ML_modeling
+:ML_modeling rdf:type owl:NamedIndividual ,
+                      :Tasks ;
+             :hasMethod :Linear_Regression ,
+                        :MLP ,
+                        :k-NN .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ML_pipeline
+:ML_pipeline rdf:type owl:NamedIndividual ,
+                      :ExecutableKG ,
+                      :KnowledgeGraph ,
+                      :Property_Graph ;
+             :visualized_By :Neo4j .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ML_pipeline_steps
+:ML_pipeline_steps rdf:type owl:NamedIndividual ,
+                            :StepsList ;
+                   :hasNext :Loads_features_and_labels .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#MMAGapp1
+:MMAGapp1 rdf:type owl:NamedIndividual ,
+                   :Application ;
+          rdfs:isDefinedBy """The MAG team consequently
+leveraged machine curation by identifying a publication
+by its contents and disambiguating authors based on their
+field(s) of research, affiliation(s), coauthor(s), and other
+factors that are more natural to humans.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Machine_Learning
+:Machine_Learning rdf:type owl:NamedIndividual ,
+                           :Keyword .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Method_Discription
+:Method_Discription rdf:type owl:NamedIndividual ,
+                             :Upper_level .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Michael_Genesereth
+:Michael_Genesereth rdf:type owl:NamedIndividual ,
+                             :author ;
+                    :works_for :Stanford_University .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Microsoft
+:Microsoft rdf:type owl:NamedIndividual ,
+                    :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#MultipleProvidersR1
+:MultipleProvidersR1 rdf:type owl:NamedIndividual ,
+                              :Requirment ;
+                     rdfs:isDefinedBy "solving the entity disambiguation problem to uniquely identify entities under question" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#NLP
+:NLP rdf:type owl:NamedIndividual ,
+              :Field ;
+     :commonlyUses :word_embedding .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#NLPKGapp1
+:NLPKGapp1 rdf:type owl:NamedIndividual ,
+                    :Application ;
+           rdfs:isDefinedBy """KGs to represent knowledge extracted by NLP. It shows a sentence from
+which one can extract the entitiesOnce this
+snippet of knowledge is incorporated into a larger KG, we
+can use logical inference to derive additional links""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#NLP_CV_app1
+:NLP_CV_app1 rdf:type owl:NamedIndividual ,
+                      :Application ;
+             rdfs:isDefinedBy """algorithms in these domains are moving
+beyond basic recognition tasks to extracting relationships
+among objects, thereby requiring a representation schemein which the extracted relations could be stored for further
+processing and reasoning.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#NLP_KG
+:NLP_KG rdf:type owl:NamedIndividual ,
+                 :KnowledgeGraph ;
+        :hasApplication :NLPKGapp1 ,
+                        :NLP_CV_app1 ;
+        :usedFor :NLP .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Naren_Chittar
+:Naren_Chittar rdf:type owl:NamedIndividual ,
+                        :author ;
+               :works_for <http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#JPMorgan_Chase_&_Co> .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#National_Oceanic_and_Atmospheric_Administration
+:National_Oceanic_and_Atmospheric_Administration rdf:type owl:NamedIndividual ,
+                                                          :InformationProvider ;
+                                                 :provideInformationTo :Data_Commons .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Neo4j
+:Neo4j rdf:type owl:NamedIndividual ,
+                :DBMS ;
+       :manageKG :PG0 .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Neuro-symbolic_reasoning
+:Neuro-symbolic_reasoning rdf:type owl:NamedIndividual ,
+                                   :Field ;
+                          :uses :Graph_embedding ,
+                                :KG0 ,
+                                :word_embedding ;
+                          rdfs:isDefinedBy """is a fast-emerging area of
+research that leverages the benefits of automatic calculation of embeddings while recognizing the need for a discrete KG to produce a human-understandable representation. We illustrate neuro-symbolic reasoning on a story
+understanding task""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#ORCID
+:ORCID rdf:type owl:NamedIndividual ,
+                :Standard ;
+       :hasProblem :SDRp1 ,
+                   :SDRp2 ,
+                   :SDRp4 ;
+       rdfs:isDefinedBy "Open Researcher and Contributor ID" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Open_Information
+:Open_Information rdf:type owl:NamedIndividual ,
+                           :InformationType .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Oslo_Metropolitan_University
+:Oslo_Metropolitan_University rdf:type owl:NamedIndividual ,
+                                       :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#PG0
+:PG0 rdf:type owl:NamedIndividual ,
+              :Property_Graph ;
+     :hasApplication :GPapp1 ,
+                     :GPapp2 ,
+                     :GPapp3 ,
+                     :GPapp4 ;
+     :visualized_By :Neo4j .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Python_Library
+:Python_Library rdf:type owl:NamedIndividual ,
+                         :Keyword .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RDF0
+:RDF0 rdf:type owl:NamedIndividual ,
+               :Direct_Labeled__Graph ;
+      :hasProblem :RDFp1 ,
+                  :RDFp2 ,
+                  :RDFp3 ,
+                  :RDFp4 ;
+      :is_a_representative_technique_of :Little_semantics .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RDFp1
+:RDFp1 rdf:type owl:NamedIndividual ,
+                :Problem ;
+       rdfs:isDefinedBy """four-place predicates which are not
+supported in directed graphs""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RDFp2
+:RDFp2 rdf:type owl:NamedIndividual ,
+                :Problem ;
+       rdfs:isDefinedBy "nonbinary relationships" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RDFp3
+:RDFp3 rdf:type owl:NamedIndividual ,
+                :Problem ;
+       :hasProblem :RDFp3 ;
+       rdfs:isDefinedBy """What common naming conventions will allow users to
+interact with multiple existing KGs and create their own
+combined products, which in turn can be used by others
+and combined still further, ad infinitum?""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RDFp4
+:RDFp4 rdf:type owl:NamedIndividual ,
+                :Problem ;
+       rdfs:isDefinedBy """How do we support codesignation of objects in different KGs, that is,
+which objects reference the same real object?""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP1
+:RP1 rdf:type owl:NamedIndividual ,
+              :ResearchPaper ;
+     :citation """Borgida and
+Mylopoulos 2009""" ;
+     rdfs:isDefinedBy """Graph-based representations of data are employed
+widely throughout computer science""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP10
+:RP10 rdf:type owl:NamedIndividual ,
+               :ResearchPaper ;
+      :citation "Lenat and Guha 1991" ;
+      rdfs:isDefinedBy """Implemented KR systems accompanied the foundational research. For example, the representation system
+CycL""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP11
+:RP11 rdf:type owl:NamedIndividual ,
+               :ResearchPaper ;
+      :citation "Lenat 1995" ;
+      rdfs:isDefinedBy """combined ideas from FOL and
+semantic networks in the context of the practical requirements of coding knowledge on a spectrum of topics""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP12
+:RP12 rdf:type owl:NamedIndividual ,
+               :ResearchPaper ;
+      :citation "McCarthy 1989; Newell 1982" ;
+      rdfs:isDefinedBy """These early systems were used to capture the knowledge of an intelligent agent, including the rules of causality, implications of relationships between entities, commonsense rules, expert rules, and others. This trajectory
+of development in AI can be loosely characterized as starting from the need for explicit representations""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP13
+:RP13 rdf:type owl:NamedIndividual ,
+               :ResearchPaper ;
+      :citation "Feigenbaum 1984" ;
+      rdfs:isDefinedBy "explicit representations  to expert systems" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP14
+:RP14 rdf:type owl:NamedIndividual ,
+               :ResearchPaper ;
+      :citation "Lenat 1995" ;
+      rdfs:isDefinedBy """explicit representations to expert systems  to
+large common sense knowledge bases .""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP15
+:RP15 rdf:type owl:NamedIndividual ,
+               :ResearchPaper ;
+      :citation "Page et al. 1999" ;
+      rdfs:isDefinedBy """There was a tremendous success in
+using information retrieval methods such as the Page Rank
+algorithm""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP16
+:RP16 rdf:type owl:NamedIndividual ,
+               :ResearchPaper ;
+      :citation """Berners-Lee, Hendler, and
+Lassila 2001""" ;
+      rdfs:isDefinedBy """t it was felt that more
+was possible if there was a way for us to convey the semantics to our search algorithms""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP17
+:RP17 rdf:type owl:NamedIndividual ,
+               :ResearchPaper ;
+      :citation "Guha 1996" ;
+      rdfs:isDefinedBy """That vision is coming to fruition with the
+improvement in search results with the help of resources
+such as Wikidata and Data Commons which use representations heavily influenced by an earlier language called
+the Meta Content Format""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP18
+:RP18 rdf:type owl:NamedIndividual ,
+               :ResearchPaper ;
+      :citation "Gutiérrez and Sequeda 2021" ;
+      rdfs:isDefinedBy """A broader account of the historical developments
+of KGs outside AI is available elsewhere""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP2
+:RP2 rdf:type owl:NamedIndividual ,
+              :ResearchPaper ;
+     :citation "Woods 1975" ;
+     rdfs:isDefinedBy """The earliest research in AI used frame representations,
+known as semantic networks, which were directed labeled
+graphs""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP3
+:RP3 rdf:type owl:NamedIndividual ,
+              :ResearchPaper ;
+     :citation """Hayes
+1981""" ;
+     rdfs:isDefinedBy """While some researchers used first-order logic (FOL) to
+computationally understand semantic networks""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP4
+:RP4 rdf:type owl:NamedIndividual ,
+              :ResearchPaper ;
+     :citation """McCarthy
+1989""" ;
+     rdfs:isDefinedBy "advocated that FOL was required to represent the knowledge needed for AI agents" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP5
+:RP5 rdf:type owl:NamedIndividual ,
+              :ResearchPaper ;
+     :citation "Brachman and Levesque 1984" ;
+     rdfs:isDefinedBy "Because of the computational difficulty of reasoning with FOL, different subsets of FOL, such as description logics" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP6
+:RP6 rdf:type owl:NamedIndividual ,
+              :ResearchPaper ;
+     :citation "Kowalski 2014" ;
+     rdfs:isDefinedBy "Because of the computational difficulty of reasoning with FOL, different subsets of FOL, such aslogic programs" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP7
+:RP7 rdf:type owl:NamedIndividual ,
+              :ResearchPaper ;
+     :citation "Taylor and Frank 1976" ;
+     rdfs:isDefinedBy """There was an
+analogous development in databases where the initial
+data systems were based on a network data model""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP8
+:RP8 rdf:type owl:NamedIndividual ,
+              :ResearchPaper ;
+     :citation "Codd 1982" ;
+     rdfs:isDefinedBy """a desire to achieve independence between the data model and the query processing eventually led to the development of relational data
+model""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RP9
+:RP9 rdf:type owl:NamedIndividual ,
+              :ResearchPaper ;
+     :citation "Buneman 1997" ;
+     rdfs:isDefinedBy """f relational data
+model  which shares its mathematical core
+with logic programming. A need to handle semistructured data  inspired the investigation of
+“schema-free” systems or triple stores that capture an
+important class of problems addressed by modern KG
+systems.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#RWTH_Aachen
+:RWTH_Aachen rdf:type owl:NamedIndividual ,
+                      :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Renssalear_Polytechnic_Institute
+:Renssalear_Polytechnic_Institute rdf:type owl:NamedIndividual ,
+                                           :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#SDRp1
+:SDRp1 rdf:type owl:NamedIndividual ,
+                :Problem ;
+       rdfs:isDefinedBy """identifiers have
+had low human readability discouraging their use""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#SDRp2
+:SDRp2 rdf:type owl:NamedIndividual ,
+                :Problem ;
+       :hasProblem :SDRp3 ;
+       rdfs:isDefinedBy """frequent typographical errors have created an adoption
+barrier""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#SDRp3
+:SDRp3 rdf:type owl:NamedIndividual ,
+                :Problem ;
+       rdfs:isDefinedBy """not having DOIs for the publications has not
+hampered their accessibility as there are multiple ways to
+find publications on the web.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#SDRp4
+:SDRp4 rdf:type owl:NamedIndividual ,
+                :Problem ;
+       rdfs:isDefinedBy """there is some abuse
+of the uniform identifiers. For example, some individuals
+acquire multiple identifiers to partition their publications
+into separate profiles defeating the design goal of ORCID
+being a unique identifier.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#San_Diego_Supercomputer_Center
+:San_Diego_Supercomputer_Center rdf:type owl:NamedIndividual ,
+                                         :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Sref1
+:Sref1 rdf:type owl:NamedIndividual ,
+                :Ref ;
+       rdfs:isDefinedBy """Baranzini, S., K. Börner, J. Morris, C. A. Nelson, K. Soman, E.
+Schleimer, M. Keiser, M. Musen, R. Pearce, T. Reza, B. Smith,
+B. Herr, B. Oskotsky, A. Rizk-Jackson, K. Rankin, S. Sanders, R.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Sref2
+:Sref2 rdf:type owl:NamedIndividual ,
+                :Ref ;
+       rdfs:isDefinedBy """Berners-Lee, T., J. Hendler, and O. Lassila 2001. “The semantic web.”
+Scientific American 284(5): 34–43""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Sref3
+:Sref3 rdf:type owl:NamedIndividual ,
+                :Ref ;
+       rdfs:isDefinedBy """Borgida, A., and J. Mylopoulos 2009. “A Sophisticate’s Guide to Informational Modeling.” In Metamodeling for Method Engineering.
+Cambridge, MA MIT: MIT Press.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Sref4
+:Sref4 rdf:type owl:NamedIndividual ,
+                :Ref ;
+       rdfs:isDefinedBy """Brachman, R. J., and H. J. Levesque 1984. “The Tractability of Subsumption in Frame-Based Description Languages.” In the proceedings of the annual conference of the Association for the Advancement
+of Artificial Intelligence 84: 34–7.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Sref5
+:Sref5 rdf:type owl:NamedIndividual ,
+                :Ref ;
+       rdfs:isDefinedBy """Brin, S., and L. Page 1999. “The anatomy of a large-scale hypertextual
+web search engine.” Computer Networks and ISDN Systems 30(1-
+7): 107–17.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Sref6
+:Sref6 rdf:type owl:NamedIndividual ,
+                :Ref ;
+       rdfs:isDefinedBy """Buneman, P. 1997. “Semistructured Data.” In Proceedings of the
+16th ACM SIGACT-SIGMOD-SIGART Symposium on Principles of
+Database Systems 117–21.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Sref7
+:Sref7 rdf:type owl:NamedIndividual ,
+                :Ref ;
+       rdfs:isDefinedBy """Cafarella, M., M. Anderson, I. Beltagy, A. Cattan, S. Chasins, I.
+Dagan, D. Downey, O. Etzioni, S. Feldman, T. Gao, T. Hope, K.
+Huang, S. Johnson, D. King, K. Lo, Y. Lou, M. Shapiro, D. Shen, S.
+Subramanian, L. Wang, Y. Wang, Y. Wang, D. Weld, J. Vo-Phamhi,
+A. Zeng, and J. Zou 2022. “Infrastructure for Rapid Open Knowledge Network Development.” AI Magazine 43(1): 59–68.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Sref8
+:Sref8 rdf:type owl:NamedIndividual ,
+                :Ref ;
+       rdfs:isDefinedBy """Chaitan, B., Scott, B., Lara, C., Aurali, D., Pradeep, F., Alex, L.,
+Douglas, M., Ibrahim, M., Linda, M., Michael, P., Michael, R.,
+Shelby, S., Nicole, T. The NSF Convergence Accelerator Program,
+AI Magazine 43(1).""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Sref9
+:Sref9 rdf:type owl:NamedIndividual ,
+                :Ref ;
+       rdfs:isDefinedBy """Chaudhri, V., K. Murray, J. Pacheco, P. Clark, B. Porter, and P. Hayes
+2004. “Graph-Based Acquisition of Expressive Knowledge.” In
+International Conference on Knowledge Engineering and Knowledge Management, 231–47. Berlin, Heidelberg: Springer.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Stanford_University
+:Stanford_University rdf:type owl:NamedIndividual ,
+                              :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Statistics_pipeline
+:Statistics_pipeline rdf:type owl:NamedIndividual ,
+                              :ExecutableKG ,
+                              :KnowledgeGraph ,
+                              :Property_Graph ;
+                     :support :ML_modeling ,
+                              :feature_engineering ;
+                     :visualized_By :Neo4j .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Statistics_pipeline_steps
+:Statistics_pipeline_steps rdf:type owl:NamedIndividual ,
+                                    :StepsList ;
+                           :hasNext :Loads_a_feature_from_an_input_CSV_dataset .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Task_Description
+:Task_Description rdf:type owl:NamedIndividual ,
+                           :Upper_level .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#The_plot_canvas_methods
+:The_plot_canvas_methods rdf:type owl:NamedIndividual ,
+                                  :Method ;
+                         rdfs:isDefinedBy "s that define the plot size and layout" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#The_various_kinds_of_plot_methods
+:The_various_kinds_of_plot_methods rdf:type owl:NamedIndividual ,
+                                            :Method ;
+                                   rdfs:isDefinedBy "eg  line plot, scatter plot, or bar plot" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#US_Census
+:US_Census rdf:type owl:NamedIndividual ,
+                    :InformationProvider ;
+           :provideInformationTo :Data_Commons .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#University_of_Mannheim
+:University_of_Mannheim rdf:type owl:NamedIndividual ,
+                                 :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#University_of_Oslo
+:University_of_Oslo rdf:type owl:NamedIndividual ,
+                             :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#VectorKGapp1
+:VectorKGapp1 rdf:type owl:NamedIndividual ,
+                       :Application ;
+              rdfs:isDefinedBy "The limitations of vector representations can be addressed by encoding the information extracted from text and images into a KG" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Vinay_K._Chaudhri
+:Vinay_K._Chaudhri rdf:type owl:NamedIndividual ,
+                            :author ;
+                   :works_for :Stanford_University .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Visualization_pipeline
+:Visualization_pipeline rdf:type owl:NamedIndividual ,
+                                 :ExecutableKG ,
+                                 :KnowledgeGraph ,
+                                 :Property_Graph ;
+                        :visualized_By :Neo4j .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Visualization_pipeline_steps
+:Visualization_pipeline_steps rdf:type owl:NamedIndividual ,
+                                       :StepsList ;
+                              :hasNext :Loads_a_feature_from_an_input_CSV_dataset .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Wikidata
+:Wikidata rdf:type owl:NamedIndividual ,
+                   :Direct_Labeled__Graph ;
+          :curatedUsing :human ;
+          :implementStandard :CALIS ,
+                             :IATA ,
+                             :ISNI ;
+          :informationAddingMethod :human-driven ,
+                                   :semiautomated ;
+          :informationType :Open_Information ;
+          :catalogs 4872 ;
+          :nbLanguages 414 ;
+          :nbObjects "90 million" ;
+          :nbRelations "1 billion" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Wikimedia_Foundation
+:Wikimedia_Foundation rdf:type owl:NamedIndividual ,
+                               :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#World_Bank
+:World_Bank rdf:type owl:NamedIndividual ,
+                     :InformationProvider ;
+            :provideInformationTo :Data_Commons .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#World_Health_Organization
+:World_Health_Organization rdf:type owl:NamedIndividual ,
+                                    :InformationProvider ;
+                           :provideInformationTo :Data_Commons .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Xin_Luna_Dong
+:Xin_Luna_Dong rdf:type owl:NamedIndividual ,
+                        :author ;
+               :works_for <http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Meta_AR/VR_Assistant> .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Zhipeng_Tan
+:Zhipeng_Tan rdf:type owl:NamedIndividual ,
+                      :author ;
+             :works_for :Bosch_Center_for_Artificial_Intelligence ,
+                        :RWTH_Aachen .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Zhuoxun_Zheng
+:Zhuoxun_Zheng rdf:type owl:NamedIndividual ,
+                        :author ;
+               :works_for :Bosch_Center_for_Artificial_Intelligence ,
+                          :Oslo_Metropolitan_University .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#add_entities_representing_the_user_task_type_and_method_type
+:add_entities_representing_the_user_task_type_and_method_type rdf:type owl:NamedIndividual ,
+                                                                       :Step ;
+                                                              :hasNext :KG_is_serialized_and_saved_on_the_disk .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#article0
+:article0 rdf:type owl:NamedIndividual ,
+                   :article ;
+          :has_as_key_word :Knowledge_Graph ,
+                           :Machine_Learning ,
+                           :Python_Library ;
+          :has_author :Antonis_Klironomos ,
+                      :Baifan_Zhou ,
+                      :Evgeny_Kharlamov ,
+                      :Gad-Elrab_Mohamed ,
+                      :Heiko_Paulheim ,
+                      :Zhipeng_Tan ,
+                      :Zhuoxun_Zheng ;
+          :has_ref :A0ref1 ,
+                   :A0ref10 ,
+                   :A0ref11 ,
+                   :A0ref12 ,
+                   :A0ref13 ,
+                   :A0ref2 ,
+                   :A0ref3 ,
+                   :A0ref4 ,
+                   :A0ref5 ,
+                   :A0ref6 ,
+                   :A0ref7 ,
+                   :A0ref8 ,
+                   :A0ref9 ;
+          :date "4 may 2023" ;
+          :title """ExeKGLib: Knowledge Graphs-Empowered
+Machine Learning Analytics""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#customer
+:customer rdf:type owl:NamedIndividual ,
+                   :Person .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#data.world
+:data.world rdf:type owl:NamedIndividual ,
+                     :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#data_integration_process
+:data_integration_process rdf:type owl:NamedIndividual ,
+                                   :StepsList ;
+                          :hasNext :DIPstep1 .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#data_preprocessing
+:data_preprocessing rdf:type owl:NamedIndividual ,
+                             :Tasks .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#data_visualization
+:data_visualization rdf:type owl:NamedIndividual ,
+                             :Tasks ;
+                    :hasMethod :The_plot_canvas_methods ,
+                               :The_various_kinds_of_plot_methods .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#enterprise
+:enterprise rdf:type owl:NamedIndividual ,
+                     :Organization ;
+            :createKG <http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#360-degree_view> ;
+            :implement :data_integration_process .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#entity_extraction
+:entity_extraction rdf:type owl:NamedIndividual ,
+                            :AITask .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#extracting_the_columns_from_the_input_dataset
+:extracting_the_columns_from_the_input_dataset rdf:type owl:NamedIndividual ,
+                                                        :Step ;
+                                               :hasNext :ExeKGLib_populates_the_KG_with_data_entities_representing_the_target_columns .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#feature_engineering
+:feature_engineering rdf:type owl:NamedIndividual ,
+                              :Tasks ;
+                     :hasMethod :Interquartile_Range_calculation ,
+                                :mean_deviation_calculation ,
+                                :standard_deviation_calculation .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#flood_impact_evaluation_OKN
+:flood_impact_evaluation_OKN rdf:type owl:NamedIndividual ,
+                                      :KnowledgeGraph ;
+                             :informationType :Open_Information .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#fully-automated
+:fully-automated rdf:type owl:NamedIndividual ,
+                          :InformationAddingMethod .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#human
+:human rdf:type owl:NamedIndividual ,
+                :Curation ;
+       :implementStandard :DOI ,
+                          :ORCID .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#human-driven
+:human-driven rdf:type owl:NamedIndividual ,
+                       :InformationAddingMethod .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#image_recognition
+:image_recognition rdf:type owl:NamedIndividual ,
+                            :AITask .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#internalProvider
+:internalProvider rdf:type owl:NamedIndividual ,
+                           :InformationProvider ;
+                  :collectDataOn :customer ;
+                  :provideInformationTo <http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#360-degree_view> .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#k-NN
+:k-NN rdf:type owl:NamedIndividual ,
+               :Method .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#machine
+:machine rdf:type owl:NamedIndividual ,
+                  :Curation .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#machine_learning_with_graphs
+:machine_learning_with_graphs rdf:type owl:NamedIndividual ,
+                                       :Method .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#matplotlib
+:matplotlib rdf:type owl:NamedIndividual ,
+                     :Library .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#mean_deviation_calculation
+:mean_deviation_calculation rdf:type owl:NamedIndividual ,
+                                     :Method .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#normalizes_it
+:normalizes_it rdf:type owl:NamedIndividual ,
+                        :Step ;
+               :hasNext :plots_its_values_using_a_scatter_plot .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#pandas
+:pandas rdf:type owl:NamedIndividual ,
+                 :Library .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#plots_its_values_using_a_line_plot
+:plots_its_values_using_a_line_plot rdf:type owl:NamedIndividual ,
+                                             :Step .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#plots_its_values_using_a_scatter_plot
+:plots_its_values_using_a_scatter_plot rdf:type owl:NamedIndividual ,
+                                                :Step .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#publishing_organization1
+:publishing_organization1 rdf:type owl:NamedIndividual ,
+                                   :publishing_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#rdf_DBMS
+:rdf_DBMS rdf:type owl:NamedIndividual ,
+                   :DBMS ;
+          :manageKG :RDF0 .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#relation_extraction
+:relation_extraction rdf:type owl:NamedIndividual ,
+                              :AITask .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#scikit-learn
+:scikit-learn rdf:type owl:NamedIndividual ,
+                       :Library .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#semiautomated
+:semiautomated rdf:type owl:NamedIndividual ,
+                        :InformationAddingMethod .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#sparql
+:sparql rdf:type owl:NamedIndividual ,
+                 :LanguageQuery ;
+        :usedFor :RDF0 .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#splits_the_data
+:splits_the_data rdf:type owl:NamedIndividual ,
+                          :Step ;
+                 :hasNext :trains_and_tests_a_k-NN_model .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#standard_deviation_calculation
+:standard_deviation_calculation rdf:type owl:NamedIndividual ,
+                                         :Method .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#survey_article
+:survey_article rdf:type owl:NamedIndividual ,
+                         :Survey_Article ;
+                :has_as_key_word :Knowledge_Graph ;
+                :has_author :Aditya_Kalyanpur ,
+                            :Chaitanya_Baru ,
+                            :Denny_Vrandečić ,
+                            :Douglas_B._Lenat ,
+                            :James_Hendler ,
+                            :Juan_Sequeda ,
+                            :Kuansan_Wang ,
+                            :Michael_Genesereth ,
+                            :Naren_Chittar ,
+                            :Vinay_K._Chaudhri ,
+                            :Xin_Luna_Dong ;
+                :has_ref :Sref1 ,
+                         :Sref2 ,
+                         :Sref3 ,
+                         :Sref4 ,
+                         :Sref5 ,
+                         :Sref6 ,
+                         :Sref7 ,
+                         :Sref8 ,
+                         :Sref9 ;
+                :date "25 January 2022" ;
+                :title "Knowledge graphs: Introduction, history, and perspectives" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#third-party_data_vendors
+:third-party_data_vendors rdf:type owl:NamedIndividual ,
+                                   :InformationProvider ;
+                          :collectDataOn :customer ;
+                          :provideInformationTo <http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#360-degree_view> .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#trains_and_tests_a_k-NN_model
+:trains_and_tests_a_k-NN_model rdf:type owl:NamedIndividual ,
+                                        :Step ;
+                               :hasNext :visualizes_the_prediction_errors .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#visualizes_the_prediction_errors
+:visualizes_the_prediction_errors rdf:type owl:NamedIndividual ,
+                                           :Step .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#webSearch
+:webSearch rdf:type owl:NamedIndividual ,
+                    :AITask .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#word_embedding
+:word_embedding rdf:type owl:NamedIndividual ,
+                         :vector_representation ;
+                :usedFor :entity_extraction ,
+                         :relation_extraction ,
+                         :word_similarity_calculation ;
+                rdfs:isDefinedBy """Word embeddings capture the
+semantic meaning of the word in a way that can be computationally leveraged in tasks, such as word similarity calculation, entity extraction, and relation extraction.""" .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#word_similarity_calculation
+:word_similarity_calculation rdf:type owl:NamedIndividual ,
+                                      :AITask ;
+                             :usedFor :image_recognition .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#360-degree_view
+<http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#360-degree_view> rdf:type owl:NamedIndividual ,
+                                                                                                    :KnowledgeGraph ;
+                                                                                           :hasApplication :EGKapp5 ,
+                                                                                                           :EKGapp1 ,
+                                                                                                           :EKGapp2 ,
+                                                                                                           :EKGapp3 ,
+                                                                                                           :EKGapp4 .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#JPMorgan_Chase_&_Co
+<http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#JPMorgan_Chase_&_Co> rdf:type owl:NamedIndividual ,
+                                                                                                        :research_organizations .
+
+
+###  http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Meta_AR/VR_Assistant
+<http://www.semanticweb.org/idwar/ontologies/2023/11/untitled-ontology-16#Meta_AR/VR_Assistant> rdf:type owl:NamedIndividual ,
+                                                                                                         :research_organizations .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
